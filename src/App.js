@@ -1,5 +1,12 @@
 import logo from './logo.svg';
 import './App.css';
+import {} from "react-router-dom"
+
+const Home = () => {
+  return(
+    <h1>Home</h1>
+  )
+}
 
 function App() {
   return (
