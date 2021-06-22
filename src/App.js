@@ -6,12 +6,16 @@ import { HomePage, LoginPage, RegisterPage } from "./pages"
 function App() {
   return (
     <Router>
-      <Switch>
-        <Route path="/" component={LoginPage} exact />
-        <Route path="/home" component={HomePage} exact />
-        <Route path="/login" component={LoginPage} exact />
-        <Route path="/register" component={RegisterPage} exact />
-      </Switch>
+      <div className="App">
+        <header className="App-header">
+          <Switch>
+            <Route path="/" component={LoginPage} exact />
+            <Route path="/home" component={HomePage} exact />
+            <Route path="/login" component={LoginPage} exact />
+            <Route path="/register" component={RegisterPage} exact />
+          </Switch>
+        </header>
+      </div>
     </Router>
   );
 }
